@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeefLover">
         <activity
+            android:name=".validation.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".validation.RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".validation.LoginPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".validation.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
