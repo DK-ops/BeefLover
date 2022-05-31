@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/home.xml" value="0.131" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_forgot_password.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_login_page.xml" value="0.22" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_register_page.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_splash_screen.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_akun.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_home.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_promo.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_transaksi.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/menu/bottom_menu.xml" value="0.21979166666666666" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/drawable/rectangle1.xml" value="0.2025" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/layout/activity_forgot_password.xml" value="0.19067977768277042" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/layout/activity_login_page.xml" value="0.1849073256840247" />
