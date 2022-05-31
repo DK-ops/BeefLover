@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentHome">
+<!--Header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:background="@drawable/kotakheader"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            style="@style/Widget.AppCompat.Light.SearchView"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:iconifiedByDefault="true"
+            app:queryHint="Cari Produk Disini" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/cart"
+            android:src="@drawable/ic_cart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/chat"
+            android:src="@drawable/ic_chat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/chat"
+            android:src="@drawable/ic_notif" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
