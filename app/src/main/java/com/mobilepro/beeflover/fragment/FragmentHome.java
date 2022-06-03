@@ -11,8 +11,17 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.mobilepro.beeflover.R;
+import com.mobilepro.beeflover.etc.SliderAdapter;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 public class FragmentHome extends Fragment {
+
+    SliderView sliderView;
+    int[] images = {R.drawable.carousel_1,
+    R.drawable.carousel_2,
+    R.drawable.carousel_3};
 
 
     @Override
@@ -20,6 +29,14 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view1 = inflater.inflate(R.layout.fragment_home,container,false);
+
+        sliderView = view1.findViewById(R.id.carouselH);
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.startAutoCycle();
+
 
         SearchView searchView = view1.findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
