@@ -64,14 +64,13 @@
         android:id="@+id/carouselH"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_120sdp"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/headerH"
+        android:layout_alignParentStart="true"
         app:sliderAnimationDuration="600"
         app:sliderAutoCycleDirection="back_and_forth"
         app:sliderAutoCycleEnabled="true"
         app:sliderIndicatorAnimationDuration="600"
-        app:sliderIndicatorGravity="center_horizontal|bottom"
-        app:sliderIndicatorMargin="@dimen/_10sdp"
+        app:sliderIndicatorEnabled="true"
         app:sliderIndicatorOrientation="horizontal"
         app:sliderScrollTimeInSec="2"
         app:sliderStartAutoCycle="true" />
@@ -94,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvkat"
         android:layout_marginTop="@dimen/_10sdp"
-        >
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -122,7 +121,7 @@
                         android:layout_height="90dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
-                        android:src="@drawable/img_daging_steak" />
+                        android:src="@drawable/kat_daging_steak" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -156,7 +155,7 @@
                         android:layout_height="90dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
-                        android:src="@drawable/img_daging_olahan" />
+                        android:src="@drawable/kat_bumbu_olahan" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -190,7 +189,7 @@
                         android:layout_height="90dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
-                        android:src="@drawable/img_paket_daging" />
+                        android:src="@drawable/kat_paket_daging" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -224,7 +223,7 @@
                         android:layout_height="90dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
-                        android:src="@drawable/img_bumbu_daging" />
+                        android:src="@drawable/kat_bumbu_dapur" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -242,10 +241,6 @@
 
     </HorizontalScrollView>
 
-
-    <!--Kategori-->
-
-
-
+<!--    Pop Item-->
 
 </RelativeLayout>
