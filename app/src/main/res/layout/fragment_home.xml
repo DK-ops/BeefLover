@@ -1,14 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.FragmentHome">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--Header-->
+    <LinearLayout
+        android:id="@+id/headerH"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HOME" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        android:background="@drawable/kotakheader"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            style="@style/Widget.AppCompat.Light.SearchView"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:iconifiedByDefault="true"
+            app:queryHint="Cari Produk Disini" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/cart"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_cart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/chat"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_chat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/chat"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_notif"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+<!--ImageSlider-->
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/carouselH"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_below="@id/headerH"
+        android:layout_alignParentStart="true"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+<!--    Kategori-->
+    <TextView
+        android:id="@+id/tvkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carouselH"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/kategori"
+        android:textColor="@color/Orange"
+        android:textSize="@dimen/_20ssp" />
+
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvkat"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvdagingsteak"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/kat_daging_steak" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="bottom"
+                        android:text="Daging Steak"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvdagingolahan"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/kat_bumbu_olahan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="bottom"
+                        android:text="Daging Olahan"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvpaketdaging"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/kat_paket_daging" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="bottom"
+                        android:text="Paket Daging"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvbumbudapur"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/kat_bumbu_dapur" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="bottom"
+                        android:text="Bumbu Dapur"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+<!--    Pop Item-->
+
+</RelativeLayout>

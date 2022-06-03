@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeefLover">
         <activity
+            android:name=".kategori.BumbuDapur"
+            android:exported="false" />
+        <activity
+            android:name=".kategori.PaketDaging"
+            android:exported="false" />
+        <activity
+            android:name=".kategori.DagingOlahan"
+            android:exported="false" />
+        <activity
+            android:name=".kategori.DagingSteak"
+            android:exported="false" />
+        <activity
             android:name=".validation.ForgotPassword"
             android:exported="false" />
         <activity
@@ -34,6 +46,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

@@ -128,8 +128,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/hehe" />
+            android:layout_centerHorizontal="true" />
 
         <Button
             android:id="@+id/profile"
@@ -163,12 +162,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ubahpwd"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:text="Toko"
-            android:textColor="@color/black"
             android:textAllCaps="false"
-            android:backgroundTint="@color/white"
-            app:cornerRadius="10dip"/>
+            android:textColor="@color/black"
+            app:cornerRadius="10dip" />
 
         <Button
             android:id="@+id/about"

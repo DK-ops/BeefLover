@@ -8,17 +8,17 @@
 
     <item
         android:id="@+id/menu_promo"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/nav_sale"
         android:title="Promo"></item>
 
     <item
         android:id="@+id/menu_transaksi"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/nav_transaksi"
         android:title="Transaksi"></item>
 
     <item
         android:id="@+id/menu_akun"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/nav_acc"
         android:title="Akun"></item>
 
 </menu>
