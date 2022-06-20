@@ -63,4 +63,5 @@ public class FragmentAkun extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_akun, container, false);
     }
+
 }

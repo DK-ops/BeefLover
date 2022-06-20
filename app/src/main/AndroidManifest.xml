@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeefLover">
         <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".AkunProfile"
+            android:exported="false" />
+        <activity
             android:name=".kategori.BumbuDapur"
             android:exported="false" />
         <activity
@@ -46,7 +55,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

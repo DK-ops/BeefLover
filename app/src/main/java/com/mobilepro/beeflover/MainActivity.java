@@ -4,17 +4,22 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mobilepro.beeflover.fragment.FragmentAkun;
 import com.mobilepro.beeflover.fragment.FragmentHome;
 import com.mobilepro.beeflover.fragment.FragmentPromo;
 import com.mobilepro.beeflover.fragment.FragmentTransaksi;
+import com.mobilepro.beeflover.validation.LoginPage;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+    Button profile;
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigation =new BottomNavigationView.OnNavigationItemSelectedListener(){
 
@@ -49,5 +54,25 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(navigation);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment,new FragmentHome()).commit();
+    }
+
+    public void logout(View view){
+        Intent intent = new Intent(this, LoginPage.class);
+        startActivity(intent);
+    }
+
+    public void profile(View view){
+        Intent intent = new Intent(this, AkunProfile.class);
+        startActivity(intent);
+    }
+
+    public void ubahpwd(View view){
+        Intent intent = new Intent(this, ChangePassword.class);
+        startActivity(intent);
+    }
+
+    public void about(View view){
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
     }
 }

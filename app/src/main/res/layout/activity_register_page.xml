@@ -62,6 +62,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/EditTextRegistPhone"
+                android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -73,7 +74,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:hint="Password"
-            android:inputType="textPassword"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -107,7 +107,8 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/Orange"
             android:text="Daftar"
-            android:onClick="daftarakun"/>
+            android:onClick="daftarakun"
+            app:cornerRadius="10dip"/>
 
         <LinearLayout
             android:layout_width="match_parent"
