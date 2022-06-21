@@ -136,12 +136,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/atas"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:text="Profile"
-            android:textColor="@color/black"
+            android:onClick="profile"
             android:textAllCaps="false"
-            android:backgroundTint="@color/white"
-            app:cornerRadius="10dip"/>
+            android:textColor="@color/black"
+            app:cornerRadius="10dip" />
 
         <Button
             android:id="@+id/ubahpwd"
@@ -151,6 +152,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:text="Change Password"
+            android:onClick="ubahpwd"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:backgroundTint="@color/white"
@@ -175,12 +177,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/toko"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:text="About"
-            android:textColor="@color/black"
+            android:onClick="about"
             android:textAllCaps="false"
-            android:backgroundTint="@color/white"
-            app:cornerRadius="10dip"/>
+            android:textColor="@color/black"
+            app:cornerRadius="10dip" />
 
         <Button
             android:id="@+id/logout"
@@ -190,6 +193,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:text="Log Out"
+            android:onClick="logout"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:backgroundTint="@color/Orange"
