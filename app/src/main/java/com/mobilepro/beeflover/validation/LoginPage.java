@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -44,21 +46,35 @@ public class LoginPage extends AppCompatActivity {
         email = inputEmail.getText().toString();
         password = inputPassword.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(email,password )
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Toast.makeText(LoginPage.this, "Login Berhasil", Toast.LENGTH_LONG).show();
-                            Intent masuk = new Intent( LoginPage.this, MainActivity.class);
-                            startActivity(masuk);
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(LoginPage.this, "Login Gagal, Email atau Password anda salah", Toast.LENGTH_SHORT).show();
+        if(!email.isEmpty() && !password.isEmpty()) {
+            mAuth.signInWithEmailAndPassword(email,password )
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                // Sign in success, update UI with the signed-in user's information
+                                Toast.makeText(LoginPage.this, "Login Berhasil", Toast.LENGTH_LONG).show();
+                                Intent masuk = new Intent( LoginPage.this, MainActivity.class);
+                                startActivity(masuk);
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Toast.makeText(LoginPage.this, "Login Gagal, Email atau Password anda salah", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                });
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(LoginPage.this, "Error: "+ e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnCanceledListener(new OnCanceledListener() {
+                        @Override
+                        public void onCanceled() {
+                            Toast.makeText(LoginPage.this, "Canceled!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
 
     }
 
