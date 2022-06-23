@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CFCECE"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.FragmentHome">
 <!--Header-->
@@ -19,7 +20,7 @@
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             style="@style/Widget.AppCompat.Light.SearchView"
-            android:layout_width="@dimen/_170sdp"
+            android:layout_width="@dimen/_200sdp"
             android:layout_height="wrap_content"
             android:background="@color/white"
             app:iconifiedByDefault="true"
@@ -45,19 +46,9 @@
             android:contentDescription="@string/chat"
             android:minWidth="48dp"
             android:minHeight="48dp"
+            android:onClick="chat"
             android:src="@drawable/ic_chat" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:clickable="true"
-            android:contentDescription="@string/chat"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:src="@drawable/ic_notif"
-            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 <!--ImageSlider-->
     <com.smarteist.autoimageslider.SliderView
@@ -83,9 +74,10 @@
         android:layout_below="@+id/carouselH"
         android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="13dp"
         android:text="@string/kategori"
         android:textColor="@color/Orange"
-        android:textSize="@dimen/_20ssp" />
+        android:textSize="20dp" />
 
     <HorizontalScrollView
 

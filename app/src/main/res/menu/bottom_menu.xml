@@ -7,9 +7,9 @@
         android:title="Home"></item>
 
     <item
-        android:id="@+id/menu_promo"
-        android:icon="@drawable/nav_sale"
-        android:title="Promo"></item>
+        android:id="@+id/menu_notif"
+        android:icon="@drawable/ic_notif"
+        android:title="Notifikasi"></item>
 
     <item
         android:id="@+id/menu_transaksi"

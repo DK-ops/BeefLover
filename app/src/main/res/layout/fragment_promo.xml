@@ -1,14 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CFCECE"
     tools:context=".fragment.FragmentPromo">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PROMO" />
+        android:layout_height="100dp"
+        android:background="@drawable/kotakheader"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:text="Notifikasi"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <RelativeLayout
+        android:id="@+id/layar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rectangle_alamat"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_diskon"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:text="Promo Ramadhan"
+            android:layout_toEndOf="@+id/icon1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramadhan banyak diskon yuk..."
+            android:layout_below="@+id/text1"
+            android:layout_toEndOf="@+id/icon1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rectangle_alamat"
+        app:layout_constraintTop_toBottomOf="@+id/layar1">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_diskon"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:text="Pesanan Telah Tiba"
+            android:layout_toEndOf="@+id/icon2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesanan mu telah tiba ditempat tujuan"
+            android:layout_below="@+id/text2"
+            android:layout_toEndOf="@+id/icon2"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
