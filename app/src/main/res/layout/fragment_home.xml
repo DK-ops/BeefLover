@@ -73,6 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/carouselH"
         android:layout_alignParentStart="true"
+        android:paddingStart="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_medium"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="13dp"
         android:text="@string/kategori"
