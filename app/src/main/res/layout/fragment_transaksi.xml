@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CFCECE"
+    android:background="#F2F2F2"
     tools:context=".fragment.FragmentTransaksi">
 
     <!-- TODO: Update blank fragment layout -->
@@ -22,5 +22,75 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="April 2022"
+        android:textColor="@color/warna_utama"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RelativeLayout
+        android:id="@+id/layar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/rectangle_alamat"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_diskon"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:text="Fiesta Bratwurst Sausage"
+            android:layout_toEndOf="@+id/icon1"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedang diproses"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/Orange"
+            android:layout_below="@+id/text1"
+            android:layout_toEndOf="@+id/icon1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 April 2022   18.30"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/icon1"
+            android:layout_below="@+id/text2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp35.000"
+            android:textSize="@dimen/_14sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/warna_utama"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_below="@+id/text1"/>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
