@@ -4,6 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F2F2"
     tools:context=".kategori.DagingSteak">
+
+    <LinearLayout
+        android:id="@+id/headerH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/kotakheader"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:minWidth="40dp"
+            android:minHeight="40dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            style="@style/Widget.AppCompat.Light.SearchView"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rectangle_text"
+            app:iconifiedByDefault="true"
+            app:queryHint="Cari Produk Disini" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/cart"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:src="@drawable/ic_cart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/chat"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:src="@drawable/ic_notif" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvdaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daging Steak"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/Orange"
+        android:textSize="@dimen/_18sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerH" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_25sdp"
+        app:layout_optimizationLevel="direct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvdaging" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

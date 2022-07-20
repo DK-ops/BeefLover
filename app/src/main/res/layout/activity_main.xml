@@ -6,19 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BotNavbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_menu"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BotNavbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_menu"/>
-
-    <FrameLayout
-        android:id="@+id/container_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        <FrameLayout
+            android:id="@+id/container_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
 
 </RelativeLayout>

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.menu_home:
                     f = new FragmentHome();
                     break;
-                case R.id.menu_promo:
+                case R.id.menu_notif:
                     f = new FragmentPromo();
                     break;
                 case R.id.menu_transaksi:
