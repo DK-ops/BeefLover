@@ -47,7 +47,6 @@
             android:contentDescription="@string/chat"
             android:minWidth="48dp"
             android:minHeight="48dp"
-            android:onClick="chat"
             android:src="@drawable/ic_chat" />
 
     </LinearLayout>

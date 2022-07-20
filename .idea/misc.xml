@@ -12,6 +12,7 @@
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/ic_launcher_background.xml" value="0.131" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/ic_logo.xml" value="0.127" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/ic_vektor_pwd.xml" value="0.131" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/kotak_navigation.xml" value="0.127" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/kotakheader.xml" value="0.131" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/nav_sale.xml" value="0.131" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/nav_transaksi.xml" value="0.131" />
@@ -19,6 +20,7 @@
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/rectangle_alamat.xml" value="0.131" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/rectangle_text.xml" value="0.131" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/round_back_theme_1000.xml" value="0.134" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/drawable/vektor_button.xml" value="0.127" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_about.xml" value="0.25" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_akun_profile.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
@@ -32,6 +34,7 @@
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_login_page.xml" value="0.22" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_main2.xml" value="0.18" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_my_toko.xml" value="0.2" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_register_page.xml" value="0.25" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/activity_splash_screen.xml" value="0.22083333333333333" />
@@ -39,10 +42,14 @@
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/chat_adapter_layout.xml" value="0.2234375" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_akun.xml" value="0.25" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_home.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_kategori.xml" value="0.25" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_produk.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_promo.xml" value="0.22" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/fragment_transaksi.xml" value="0.25" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/gridview.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/layout/row_items.xml" value="0.25" />
         <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/menu/bottom_menu.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/BlaanK/Downloads/Documents/MSIB/BeefLover/app/src/main/res/menu/toko_menu.xml" value="0.25" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/drawable/rectangle1.xml" value="0.2025" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/layout/activity_change_password.xml" value="0.23229166666666667" />
         <entry key="..\:/aap/SIB/BeefLover/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />

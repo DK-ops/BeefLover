@@ -1,14 +1,17 @@
 package com.mobilepro.beeflover;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mobilepro.beeflover.fragment.FragmentAkun;
@@ -57,8 +60,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logout(View view){
-        Intent intent = new Intent(this, LoginPage.class);
-        startActivity(intent);
+        new AlertDialog.Builder(this).setMessage("Apakah anda yakin ingin Keluar ?").setPositiveButton("Keluar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                        Toast.makeText(MainActivity.this, "Berhasil Keluar",Toast.LENGTH_SHORT).show();
+                    }
+                }).setNegativeButton("Tidak", null).show();
+
     }
 
     public void profile(View view){
@@ -73,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void about(View view){
         Intent intent = new Intent(this, About.class);
+        startActivity(intent);
+    }
+
+    public void toko(View view){
+        Intent intent = new Intent(this, MyToko.class);
         startActivity(intent);
     }
 }
