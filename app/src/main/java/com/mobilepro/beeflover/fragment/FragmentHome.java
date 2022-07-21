@@ -161,7 +161,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
             View view = getLayoutInflater().inflate(R.layout.row_items, null);
 
-            ImageView imageView = view.findViewById(R.id.imageView);
+            ImageView imageView = view.findViewById(R.id.gambaritem);
             TextView tvName = view.findViewById(R.id.tvName);
             TextView tvPrice = view.findViewById(R.id.tvPrice);
             TextView tvToko = view.findViewById(R.id.tvToko);

@@ -5,4 +5,30 @@
     <string name="cart">cart</string>
     <string name="chat">chat</string>
     <string name="kategori">Kategori</string>
+
+    <string-array name="namaProduk1">
+        <item>Daging Sirloin</item>
+        <item>Sandung Lumur</item>
+        <item>Daging Tenderloin</item>
+        <item>Daging Shortplate</item>
+        <item>Daging Iga</item>
+        <item>Daging Paha Atas</item>
+    </string-array>
+    <string-array name="tokoProduk1">
+        <item>FIESTA OFFICIAL</item>
+        <item>RIVERLAND</item>
+        <item>PRONAS</item>
+        <item>DAGING ASEP</item>
+        <item>DAGING BAMBANG</item>
+        <item>Daging Diniro</item>
+
+    </string-array>
+    <string-array name="hargaProd1">
+        <item>Rp.35.000</item>
+        <item>Rp.50.500</item>
+        <item>Rp.21.000</item>
+        <item>Rp.50.000</item>
+        <item>Rp.35.000</item>
+        <item>Rp.45.000</item>
+    </string-array>
 </resources>
